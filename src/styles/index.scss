@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+.navbar {
+ display: flex;
+ justify-content:space-around;
+ background-color: $blueColor;
+ padding: 20px;
+ a{
+    color: $yellowColor;
+    text-decoration: none;
+ }
+}
+
+h1{
+    color: $yellowColor;
+}
+
+
+.projects{
+    margin: 100px;
+    display: flex;
+    img{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .Github {
+        @include buttonStyle($blueColor, 15px)
+    }
+    .Live{
+        @include buttonStyle($yellowColor, 15px)
+    }
+}
+
